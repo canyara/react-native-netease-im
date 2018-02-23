@@ -38,6 +38,7 @@
 		4EC4FCCC1ECA9BBC00F3DA5E /* NIMMessageMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EC4FCCB1ECA9BBC00F3DA5E /* NIMMessageMaker.m */; };
 		4EC4FCCF1ECA9BDB00F3DA5E /* NSString+NIMKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EC4FCCE1ECA9BDB00F3DA5E /* NSString+NIMKit.m */; };
 		4EC4FCD21ECA9C6C00F3DA5E /* NIMKitLocationPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EC4FCD11ECA9C6C00F3DA5E /* NIMKitLocationPoint.m */; };
+		EF5AFB2C203FD8F6003480ED /* NIMAVChatController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF5AFB2B203FD8F6003480ED /* NIMAVChatController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -119,6 +120,8 @@
 		4EC4FCCE1ECA9BDB00F3DA5E /* NSString+NIMKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+NIMKit.m"; sourceTree = "<group>"; };
 		4EC4FCD01ECA9C6C00F3DA5E /* NIMKitLocationPoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NIMKitLocationPoint.h; sourceTree = "<group>"; };
 		4EC4FCD11ECA9C6C00F3DA5E /* NIMKitLocationPoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NIMKitLocationPoint.m; sourceTree = "<group>"; };
+		EF5AFB2A203FD8F6003480ED /* NIMAVChatController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NIMAVChatController.h; sourceTree = "<group>"; };
+		EF5AFB2B203FD8F6003480ED /* NIMAVChatController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NIMAVChatController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,6 +154,8 @@
 		4E5B47431EC1788F00D74E72 /* RNNeteaseIm */ = {
 			isa = PBXGroup;
 			children = (
+				EF5AFB2A203FD8F6003480ED /* NIMAVChatController.h */,
+				EF5AFB2B203FD8F6003480ED /* NIMAVChatController.m */,
 				4E3DD02A1EF384A900012CB7 /* DWCustomAttachment.h */,
 				4E3DD02B1EF384A900012CB7 /* DWCustomAttachment.m */,
 				4E3DD02C1EF384A900012CB7 /* DWCustomAttachmentDecoder.h */,
@@ -316,6 +321,7 @@
 				4E3DD02F1EF384A900012CB7 /* DWCustomAttachmentDecoder.m in Sources */,
 				4E5B47781EC1793600D74E72 /* RNNeteaseIm.m in Sources */,
 				4E5B47C61EC17A0D00D74E72 /* NIMModel.m in Sources */,
+				EF5AFB2C203FD8F6003480ED /* NIMAVChatController.m in Sources */,
 				4EC4FCCF1ECA9BDB00F3DA5E /* NSString+NIMKit.m in Sources */,
 				4E5B47CF1EC17A0D00D74E72 /* NTESPinyinConverter.m in Sources */,
 				4E354E871ECBE72700CD6587 /* NIMObject.m in Sources */,

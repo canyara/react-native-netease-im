@@ -705,6 +705,7 @@ RCT_EXPORT_METHOD(cleanCache){
 - (void)initController{
     [self setSendState];
     [[NIMViewController initWithController] addDelegate];
+    [[NIMAVChatController initWithController] addDelegate];
     [[NoticeViewController initWithNoticeViewController]initWithDelegate];
     [RNNotificationCenter sharedCenter];
 }
