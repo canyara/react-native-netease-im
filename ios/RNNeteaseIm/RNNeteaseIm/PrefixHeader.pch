@@ -7,7 +7,9 @@
 //
 #ifndef PrefixHeader_pch
 #define PrefixHeader_pch
+#ifdef __OBJC__
 #import <NIMSDK.h>
+#import <NIMAVChat.h>
 #import "NTESGlobalMacro.h"
 #import "NIMKitInfo.h"
 #import "NIMKitUtil.h"
@@ -40,5 +42,5 @@ static DDLogLevel ddLogLevel = DDLogLevelInfo;
 #define CustomMessgeTypeAccountNotice  8   //账户通知，与账户金额相关变动 account_notice
 #define CustomMessgeTypeRedPacketOpenMessage  9     //发送拆红包
 #define CustomMessgeTypeBusinessCard  10     //名片
-
+#endif
 #endif /* PrefixHeader_pch */

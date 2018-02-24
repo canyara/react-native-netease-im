@@ -37,35 +37,47 @@
     // Do any additional setup after loading the view.
 }
 
+-(void)registNTESGLView:(NTESGLView*)view{
+    self.regView = view;
+}
+
 -(void) joinMeeting:(NSString*)name
-                    (NSString*)callID
+             resolve:(SUCCESS)resolve
+            reject:(ERROR)reject
 {
     //初始化会议
     NIMNetCallMeeting *meeting = [[NIMNetCallMeeting alloc] init];
     //指定会议名
-    meeting.name = @"meetingName";
+    meeting.name = name;
     meeting.type = NIMNetCallMediaTypeVideo;
     meeting.actor = NO;
-    meeting.callID = callID;
     
     //加入会议
-    [[NIMAVChatSDK sharedSDK].netCallManager joinMeeting:_meeting completion:^(NIMNetCallMeeting * _Nonnull meeting, NSError * _Nonnull error) {
+    [[NIMAVChatSDK sharedSDK].netCallManager joinMeeting:meeting completion:^(NIMNetCallMeeting * _Nonnull meeting, NSError * _Nonnull error) {
         //加入会议失败
         if (error) {
+            reject(error.localizedDescription);
         }
         //加入会议成功
         else
         {
+            self.currentMeeting = meeting;
+            resolve(name);
         }
     }];
 }
 
 -(void) leaveMeeting{
+    if(self.currentMeeting == nil){
+        return;
+    }
+    
     //获取当前会议
-    NIMNetCallMeeting *meeting = [self getCurrentMeeting];
+    NIMNetCallMeeting *meeting = self.currentMeeting;
     
     //离开当前多人会议
     [[NIMAVChatSDK sharedSDK].netCallManager leaveMeeting:meeting];
+    self.currentMeeting = nil;
 }
 
 #pragma mark - NIMNetCallManagerDelegate
@@ -78,7 +90,9 @@
                   height:(NSUInteger)height
                     from:(NSString *)user
 {
-    
+    if(self.regView != nil){
+        [self.regView render:yuvData width:width height:height];
+    }
 }
 
 //收到用户加入通知
@@ -95,28 +109,36 @@
 
 - (void)onBypassStreamingStatus:(NIMBypassStreamingStatus)code
 {
+    NSString *strStatus = @"0";
+    
     switch (code) {
         case NIMBypassStreamingStatusInitial:
             NSLog(@"开始连接");
+            strStatus = @"开始连接";
             break;
             
         case NIMBypassStreamingStatusConnecting:
             NSLog(@"连接中");
+            strStatus = @"连接中";
             break;
             
         case NIMBypassStreamingStatusConnectFailed:
             NSLog(@"连接失败");
+            strStatus = @"连接失败";
             break;
             
         default:
             break;
     }
+    
+    [NIMModel initShareMD].avchatStatus = strStatus;
 }
 
 //会议发生错误
 - (void)onMeetingError:(NSError *)error meeting:(NIMNetCallMeeting *)meeting
 {
     //互动直播发生错误 刷新UI
+    [NIMModel initShareMD].avchatStatus = error.localizedDescription;
 }
 
 @end

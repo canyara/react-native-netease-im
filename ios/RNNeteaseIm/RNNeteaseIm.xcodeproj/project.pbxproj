@@ -38,7 +38,24 @@
 		4EC4FCCC1ECA9BBC00F3DA5E /* NIMMessageMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EC4FCCB1ECA9BBC00F3DA5E /* NIMMessageMaker.m */; };
 		4EC4FCCF1ECA9BDB00F3DA5E /* NSString+NIMKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EC4FCCE1ECA9BDB00F3DA5E /* NSString+NIMKit.m */; };
 		4EC4FCD21ECA9C6C00F3DA5E /* NIMKitLocationPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EC4FCD11ECA9C6C00F3DA5E /* NIMKitLocationPoint.m */; };
+		EF574014204155E9000767B4 /* renderer_yuv444p10le.c in Sources */ = {isa = PBXBuildFile; fileRef = EF573FF2204155E9000767B4 /* renderer_yuv444p10le.c */; };
+		EF574015204155E9000767B4 /* common.c in Sources */ = {isa = PBXBuildFile; fileRef = EF573FF3204155E9000767B4 /* common.c */; };
+		EF574016204155E9000767B4 /* mvp.vsh.c in Sources */ = {isa = PBXBuildFile; fileRef = EF573FF6204155E9000767B4 /* mvp.vsh.c */; };
+		EF574017204155E9000767B4 /* renderer_rgb.c in Sources */ = {isa = PBXBuildFile; fileRef = EF573FF7204155E9000767B4 /* renderer_rgb.c */; };
+		EF574018204155E9000767B4 /* renderer_yuv420p.c in Sources */ = {isa = PBXBuildFile; fileRef = EF573FF8204155E9000767B4 /* renderer_yuv420p.c */; };
+		EF574019204155E9000767B4 /* renderer_yuv420sp.c in Sources */ = {isa = PBXBuildFile; fileRef = EF573FF9204155E9000767B4 /* renderer_yuv420sp.c */; };
+		EF57401A204155E9000767B4 /* shader.c in Sources */ = {isa = PBXBuildFile; fileRef = EF573FFA204155E9000767B4 /* shader.c */; };
+		EF57401B204155E9000767B4 /* renderer.c in Sources */ = {isa = PBXBuildFile; fileRef = EF573FFB204155E9000767B4 /* renderer.c */; };
+		EF57401C204155E9000767B4 /* yuv444p10le.fsh.c in Sources */ = {isa = PBXBuildFile; fileRef = EF573FFD204155E9000767B4 /* yuv444p10le.fsh.c */; };
+		EF57401D204155E9000767B4 /* yuv420p.fsh.c in Sources */ = {isa = PBXBuildFile; fileRef = EF573FFE204155E9000767B4 /* yuv420p.fsh.c */; };
+		EF57401E204155E9000767B4 /* yuv420sp.fsh.c in Sources */ = {isa = PBXBuildFile; fileRef = EF573FFF204155E9000767B4 /* yuv420sp.fsh.c */; };
+		EF57401F204155E9000767B4 /* rgb.fsh.c in Sources */ = {isa = PBXBuildFile; fileRef = EF574000204155E9000767B4 /* rgb.fsh.c */; };
+		EF574020204155E9000767B4 /* color.c in Sources */ = {isa = PBXBuildFile; fileRef = EF574001204155E9000767B4 /* color.c */; };
+		EF574021204155E9000767B4 /* IJKSDLGLView.m in Sources */ = {isa = PBXBuildFile; fileRef = EF57400B204155E9000767B4 /* IJKSDLGLView.m */; };
+		EF574022204155E9000767B4 /* ijksdl_timer.c in Sources */ = {isa = PBXBuildFile; fileRef = EF574013204155E9000767B4 /* ijksdl_timer.c */; };
 		EF5AFB2C203FD8F6003480ED /* NIMAVChatController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF5AFB2B203FD8F6003480ED /* NIMAVChatController.m */; };
+		EFEFF7EF2040296100757B70 /* NTESGLView.m in Sources */ = {isa = PBXBuildFile; fileRef = EFEFF7ED2040296100757B70 /* NTESGLView.m */; };
+		EFEFF7F320402A6100757B70 /* NTESGLViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EFEFF7F220402A6100757B70 /* NTESGLViewManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -120,8 +137,46 @@
 		4EC4FCCE1ECA9BDB00F3DA5E /* NSString+NIMKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+NIMKit.m"; sourceTree = "<group>"; };
 		4EC4FCD01ECA9C6C00F3DA5E /* NIMKitLocationPoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NIMKitLocationPoint.h; sourceTree = "<group>"; };
 		4EC4FCD11ECA9C6C00F3DA5E /* NIMKitLocationPoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NIMKitLocationPoint.m; sourceTree = "<group>"; };
+		EF573FEE204155E9000767B4 /* ijksdl_gles2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ijksdl_gles2.h; sourceTree = "<group>"; };
+		EF573FEF204155E9000767B4 /* ijksdl_stdinc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ijksdl_stdinc.h; sourceTree = "<group>"; };
+		EF573FF0204155E9000767B4 /* ijksdl_vout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ijksdl_vout.h; sourceTree = "<group>"; };
+		EF573FF2204155E9000767B4 /* renderer_yuv444p10le.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = renderer_yuv444p10le.c; sourceTree = "<group>"; };
+		EF573FF3204155E9000767B4 /* common.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = common.c; sourceTree = "<group>"; };
+		EF573FF4204155E9000767B4 /* internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = internal.h; sourceTree = "<group>"; };
+		EF573FF6204155E9000767B4 /* mvp.vsh.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = mvp.vsh.c; sourceTree = "<group>"; };
+		EF573FF7204155E9000767B4 /* renderer_rgb.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = renderer_rgb.c; sourceTree = "<group>"; };
+		EF573FF8204155E9000767B4 /* renderer_yuv420p.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = renderer_yuv420p.c; sourceTree = "<group>"; };
+		EF573FF9204155E9000767B4 /* renderer_yuv420sp.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = renderer_yuv420sp.c; sourceTree = "<group>"; };
+		EF573FFA204155E9000767B4 /* shader.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = shader.c; sourceTree = "<group>"; };
+		EF573FFB204155E9000767B4 /* renderer.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = renderer.c; sourceTree = "<group>"; };
+		EF573FFD204155E9000767B4 /* yuv444p10le.fsh.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = yuv444p10le.fsh.c; sourceTree = "<group>"; };
+		EF573FFE204155E9000767B4 /* yuv420p.fsh.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = yuv420p.fsh.c; sourceTree = "<group>"; };
+		EF573FFF204155E9000767B4 /* yuv420sp.fsh.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = yuv420sp.fsh.c; sourceTree = "<group>"; };
+		EF574000204155E9000767B4 /* rgb.fsh.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = rgb.fsh.c; sourceTree = "<group>"; };
+		EF574001204155E9000767B4 /* color.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = color.c; sourceTree = "<group>"; };
+		EF574002204155E9000767B4 /* ijksdl_mutex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ijksdl_mutex.h; sourceTree = "<group>"; };
+		EF574003204155E9000767B4 /* ijksdl_fourcc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ijksdl_fourcc.h; sourceTree = "<group>"; };
+		EF574004204155E9000767B4 /* ijksdl_video.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ijksdl_video.h; sourceTree = "<group>"; };
+		EF574005204155E9000767B4 /* ijksdl_endian.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ijksdl_endian.h; sourceTree = "<group>"; };
+		EF574006204155E9000767B4 /* ijksdl_class.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ijksdl_class.h; sourceTree = "<group>"; };
+		EF574007204155E9000767B4 /* ijksdl_timer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ijksdl_timer.h; sourceTree = "<group>"; };
+		EF574008204155E9000767B4 /* ijksdl_inc_internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ijksdl_inc_internal.h; sourceTree = "<group>"; };
+		EF57400A204155E9000767B4 /* ijksdl_ios.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ijksdl_ios.h; sourceTree = "<group>"; };
+		EF57400B204155E9000767B4 /* IJKSDLGLView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IJKSDLGLView.m; sourceTree = "<group>"; };
+		EF57400C204155E9000767B4 /* ijksdl_vout_overlay_videotoolbox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ijksdl_vout_overlay_videotoolbox.h; sourceTree = "<group>"; };
+		EF57400D204155E9000767B4 /* IJKSDLGLView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IJKSDLGLView.h; sourceTree = "<group>"; };
+		EF57400E204155E9000767B4 /* ijksdl_thread.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ijksdl_thread.h; sourceTree = "<group>"; };
+		EF57400F204155E9000767B4 /* ijksdl_log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ijksdl_log.h; sourceTree = "<group>"; };
+		EF574010204155E9000767B4 /* ijksdl_misc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ijksdl_misc.h; sourceTree = "<group>"; };
+		EF574011204155E9000767B4 /* ijksdl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ijksdl.h; sourceTree = "<group>"; };
+		EF574012204155E9000767B4 /* ijksdl_error.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ijksdl_error.h; sourceTree = "<group>"; };
+		EF574013204155E9000767B4 /* ijksdl_timer.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ijksdl_timer.c; sourceTree = "<group>"; };
 		EF5AFB2A203FD8F6003480ED /* NIMAVChatController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NIMAVChatController.h; sourceTree = "<group>"; };
 		EF5AFB2B203FD8F6003480ED /* NIMAVChatController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NIMAVChatController.m; sourceTree = "<group>"; };
+		EFEFF7EC2040296100757B70 /* NTESGLView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NTESGLView.h; sourceTree = "<group>"; };
+		EFEFF7ED2040296100757B70 /* NTESGLView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NTESGLView.m; sourceTree = "<group>"; };
+		EFEFF7F120402A4000757B70 /* NTESGLViewManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NTESGLViewManager.h; sourceTree = "<group>"; };
+		EFEFF7F220402A6100757B70 /* NTESGLViewManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NTESGLViewManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,6 +193,7 @@
 		4E5B47381EC1788F00D74E72 = {
 			isa = PBXGroup;
 			children = (
+				EF573FED204155E9000767B4 /* ijksdl */,
 				4E5B47431EC1788F00D74E72 /* RNNeteaseIm */,
 				4E5B47421EC1788F00D74E72 /* Products */,
 			);
@@ -154,6 +210,9 @@
 		4E5B47431EC1788F00D74E72 /* RNNeteaseIm */ = {
 			isa = PBXGroup;
 			children = (
+				EFEFF7F220402A6100757B70 /* NTESGLViewManager.m */,
+				EFEFF7EC2040296100757B70 /* NTESGLView.h */,
+				EFEFF7ED2040296100757B70 /* NTESGLView.m */,
 				EF5AFB2A203FD8F6003480ED /* NIMAVChatController.h */,
 				EF5AFB2B203FD8F6003480ED /* NIMAVChatController.m */,
 				4E3DD02A1EF384A900012CB7 /* DWCustomAttachment.h */,
@@ -183,6 +242,7 @@
 				4E5B47B31EC17A0D00D74E72 /* Util */,
 				4E27A5C91ED5417100543BFC /* RNNotificationCenter.h */,
 				4E27A5CA1ED5417100543BFC /* RNNotificationCenter.m */,
+				EFEFF7F120402A4000757B70 /* NTESGLViewManager.h */,
 			);
 			path = RNNeteaseIm;
 			sourceTree = "<group>";
@@ -249,6 +309,79 @@
 			path = Spelling;
 			sourceTree = "<group>";
 		};
+		EF573FED204155E9000767B4 /* ijksdl */ = {
+			isa = PBXGroup;
+			children = (
+				EF573FEE204155E9000767B4 /* ijksdl_gles2.h */,
+				EF573FEF204155E9000767B4 /* ijksdl_stdinc.h */,
+				EF573FF0204155E9000767B4 /* ijksdl_vout.h */,
+				EF573FF1204155E9000767B4 /* gles2 */,
+				EF574002204155E9000767B4 /* ijksdl_mutex.h */,
+				EF574003204155E9000767B4 /* ijksdl_fourcc.h */,
+				EF574004204155E9000767B4 /* ijksdl_video.h */,
+				EF574005204155E9000767B4 /* ijksdl_endian.h */,
+				EF574006204155E9000767B4 /* ijksdl_class.h */,
+				EF574007204155E9000767B4 /* ijksdl_timer.h */,
+				EF574008204155E9000767B4 /* ijksdl_inc_internal.h */,
+				EF574009204155E9000767B4 /* ios */,
+				EF57400E204155E9000767B4 /* ijksdl_thread.h */,
+				EF57400F204155E9000767B4 /* ijksdl_log.h */,
+				EF574010204155E9000767B4 /* ijksdl_misc.h */,
+				EF574011204155E9000767B4 /* ijksdl.h */,
+				EF574012204155E9000767B4 /* ijksdl_error.h */,
+				EF574013204155E9000767B4 /* ijksdl_timer.c */,
+			);
+			path = ijksdl;
+			sourceTree = "<group>";
+		};
+		EF573FF1204155E9000767B4 /* gles2 */ = {
+			isa = PBXGroup;
+			children = (
+				EF573FF2204155E9000767B4 /* renderer_yuv444p10le.c */,
+				EF573FF3204155E9000767B4 /* common.c */,
+				EF573FF4204155E9000767B4 /* internal.h */,
+				EF573FF5204155E9000767B4 /* vsh */,
+				EF573FF7204155E9000767B4 /* renderer_rgb.c */,
+				EF573FF8204155E9000767B4 /* renderer_yuv420p.c */,
+				EF573FF9204155E9000767B4 /* renderer_yuv420sp.c */,
+				EF573FFA204155E9000767B4 /* shader.c */,
+				EF573FFB204155E9000767B4 /* renderer.c */,
+				EF573FFC204155E9000767B4 /* fsh */,
+				EF574001204155E9000767B4 /* color.c */,
+			);
+			path = gles2;
+			sourceTree = "<group>";
+		};
+		EF573FF5204155E9000767B4 /* vsh */ = {
+			isa = PBXGroup;
+			children = (
+				EF573FF6204155E9000767B4 /* mvp.vsh.c */,
+			);
+			path = vsh;
+			sourceTree = "<group>";
+		};
+		EF573FFC204155E9000767B4 /* fsh */ = {
+			isa = PBXGroup;
+			children = (
+				EF573FFD204155E9000767B4 /* yuv444p10le.fsh.c */,
+				EF573FFE204155E9000767B4 /* yuv420p.fsh.c */,
+				EF573FFF204155E9000767B4 /* yuv420sp.fsh.c */,
+				EF574000204155E9000767B4 /* rgb.fsh.c */,
+			);
+			path = fsh;
+			sourceTree = "<group>";
+		};
+		EF574009204155E9000767B4 /* ios */ = {
+			isa = PBXGroup;
+			children = (
+				EF57400A204155E9000767B4 /* ijksdl_ios.h */,
+				EF57400B204155E9000767B4 /* IJKSDLGLView.m */,
+				EF57400C204155E9000767B4 /* ijksdl_vout_overlay_videotoolbox.h */,
+				EF57400D204155E9000767B4 /* IJKSDLGLView.h */,
+			);
+			path = ios;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -308,33 +441,50 @@
 			files = (
 				4E5B47D01EC17A0D00D74E72 /* NTESSpellingCenter.m in Sources */,
 				4E5B49B71EC1AE5600D74E72 /* NIMKitUtil.m in Sources */,
+				EF574022204155E9000767B4 /* ijksdl_timer.c in Sources */,
 				4E3DD02E1EF384A900012CB7 /* DWCustomAttachment.m in Sources */,
 				4E27A5CB1ED5417100543BFC /* RNNotificationCenter.m in Sources */,
 				4E5B47C91EC17A0D00D74E72 /* TeamViewController.m in Sources */,
 				4E5B49D11EC1B34B00D74E72 /* NIMKit.m in Sources */,
+				EF574017204155E9000767B4 /* renderer_rgb.c in Sources */,
 				4E354EC01ECC2E3400CD6587 /* NSDictionary+NTESJson.m in Sources */,
+				EF574021204155E9000767B4 /* IJKSDLGLView.m in Sources */,
 				4EBD0A9D1EC565D2000C77B8 /* BankListViewController.m in Sources */,
 				4E5B47C51EC17A0D00D74E72 /* ConversationViewController.m in Sources */,
 				4E5B47CE1EC17A0D00D74E72 /* NTESClientUtil.m in Sources */,
 				4E6BA8EC1EC2D23A00630D77 /* NIMKitTimerHolder.m in Sources */,
+				EF57401E204155E9000767B4 /* yuv420sp.fsh.c in Sources */,
 				4E5B47CA1EC17A0D00D74E72 /* NTESContactDataMember.m in Sources */,
 				4E3DD02F1EF384A900012CB7 /* DWCustomAttachmentDecoder.m in Sources */,
 				4E5B47781EC1793600D74E72 /* RNNeteaseIm.m in Sources */,
 				4E5B47C61EC17A0D00D74E72 /* NIMModel.m in Sources */,
+				EFEFF7F320402A6100757B70 /* NTESGLViewManager.m in Sources */,
+				EF574014204155E9000767B4 /* renderer_yuv444p10le.c in Sources */,
 				EF5AFB2C203FD8F6003480ED /* NIMAVChatController.m in Sources */,
+				EF574020204155E9000767B4 /* color.c in Sources */,
+				EF574016204155E9000767B4 /* mvp.vsh.c in Sources */,
 				4EC4FCCF1ECA9BDB00F3DA5E /* NSString+NIMKit.m in Sources */,
 				4E5B47CF1EC17A0D00D74E72 /* NTESPinyinConverter.m in Sources */,
+				EFEFF7EF2040296100757B70 /* NTESGLView.m in Sources */,
+				EF574018204155E9000767B4 /* renderer_yuv420p.c in Sources */,
 				4E354E871ECBE72700CD6587 /* NIMObject.m in Sources */,
 				4E9C78B91ECE88ED00037A6C /* NTESSDKConfigDelegate.m in Sources */,
 				4EC4FCD21ECA9C6C00F3DA5E /* NIMKitLocationPoint.m in Sources */,
+				EF57401C204155E9000767B4 /* yuv444p10le.fsh.c in Sources */,
 				4E5B49B41EC1AE0600D74E72 /* NIMKitInfo.m in Sources */,
+				EF57401A204155E9000767B4 /* shader.c in Sources */,
 				4E5B49D51EC1BA0900D74E72 /* NIMKitDataProviderImpl.m in Sources */,
 				4E5B47CD1EC17A0D00D74E72 /* NTESBundleSetting.m in Sources */,
 				4EC4FCCC1ECA9BBC00F3DA5E /* NIMMessageMaker.m in Sources */,
+				EF57401F204155E9000767B4 /* rgb.fsh.c in Sources */,
+				EF574019204155E9000767B4 /* renderer_yuv420sp.c in Sources */,
 				4E5B47C41EC17A0D00D74E72 /* ContactViewController.m in Sources */,
 				4E5B49CE1EC1B0A700D74E72 /* NIMKitInfoFetchOption.m in Sources */,
+				EF574015204155E9000767B4 /* common.c in Sources */,
 				4E5B47CC1EC17A0D00D74E72 /* NTESGroupedDataCollection.m in Sources */,
 				4E5B47C81EC17A0D00D74E72 /* NoticeViewController.m in Sources */,
+				EF57401D204155E9000767B4 /* yuv420p.fsh.c in Sources */,
+				EF57401B204155E9000767B4 /* renderer.c in Sources */,
 				4E5B47CB1EC17A0D00D74E72 /* NTESGroupedContacts.m in Sources */,
 				4E5B47C71EC17A0D00D74E72 /* NIMViewController.m in Sources */,
 				4E6BA8E91EC2D21500630D77 /* NIMKitNotificationFirer.m in Sources */,
@@ -441,6 +591,9 @@
 				HEADER_SEARCH_PATHS = (
 					"$(SRCROOT)/../../../react-native/React/**",
 					"$(SRCROOT)/../../../../ios/Pods/Headers/Public/**",
+					"$(SRCROOT)",
+					"~/workPath/coin-pusher/ios/Pods/Headers/Public/**",
+					"~/workPath/coin-pusher/node_modules/react-native/React/**",
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -456,6 +609,9 @@
 				HEADER_SEARCH_PATHS = (
 					"$(SRCROOT)/../../../react-native/React/**",
 					"$(SRCROOT)/../../../../ios/Pods/Headers/Public/**",
+					"$(SRCROOT)",
+					"$(PROJECT_DIR)/Pods/Headers/Public/**",
+					"$(PROJECT_DIR)/../node_modules/react-native/React/**",
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";

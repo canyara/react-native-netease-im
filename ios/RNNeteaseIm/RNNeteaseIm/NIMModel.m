@@ -153,4 +153,9 @@
     }
 }
 
+- (void)setAvchatStatus:(NSString *)status{
+    if(self.myBlock){
+        self.myBlock(17, status);
+    }
+}
 @end

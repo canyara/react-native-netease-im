@@ -7,6 +7,7 @@ import NimListener from './im/Listener';
 import NimSession from './im/Session';
 import NimSystemMsg from './im/SystemMsg';
 import NimTeam from './im/Team';
+import NTESGLView from './NTESGLView';
 export {
     NimUtils,
     NimFriend,
@@ -14,6 +15,7 @@ export {
     NimSession,
     NimSystemMsg,
     NimTeam,
+    NTESGLView,
 };
 
 // export default NIM;

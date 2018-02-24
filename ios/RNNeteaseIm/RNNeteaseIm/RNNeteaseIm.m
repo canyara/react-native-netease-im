@@ -77,6 +77,11 @@
     return result;
 }
 
+
+- (void)registNTESGLView:(NTESGLView*)view{
+    [[NIMAVChatController initWithController] registNTESGLView:view];
+}
+
 @synthesize bridge = _bridge;
 - (dispatch_queue_t)methodQueue
 {
@@ -783,6 +788,9 @@ RCT_EXPORT_METHOD(cleanCache){
                 //资金变动通知
                 [_bridge.eventDispatcher sendDeviceEventWithName:@"observeAccountNotice" body:param];
                 break;
+            case 17:
+                //视频会议相关通知
+                [_bridge.eventDispatcher sendDeviceEventWithName:@"observeAVChatStatus" body:param];
             default:
                 break;
         }
@@ -858,6 +866,25 @@ RCT_EXPORT_METHOD(setupWebViewUserAgent){
             break;
     }
     return strNetWork;
+}
+
+#pragma mark -- AVChat-------
+//加入会议
+RCT_EXPORT_METHOD(joinMeeting:(nonnull NSString *)name
+                  resolve:(RCTPromiseResolveBlock)resolve
+                  reject:(RCTPromiseRejectBlock)reject)
+{
+    [[NIMAVChatController initWithController] joinMeeting:name resolve:^(id param) {
+        resolve(param);
+    } reject:^(id erro) {
+        reject(@"-1",erro,nil);
+    }];
+}
+
+//离开当前多人会议
+RCT_EXPORT_METHOD(leaveMeeting)
+{
+    [[NIMAVChatController initWithController] leaveMeeting];
 }
 
 @end

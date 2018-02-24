@@ -15,6 +15,7 @@
 #import "ConversationViewController.h"
 #import "BankListViewController.h"
 #import "NIMAVChatController.h"
+#import "NTESGLView.h"
 @interface RNNeteaseIm : RCTViewManager
-
+-(void)registNTESGLView:(NTESGLView*)view;
 @end
