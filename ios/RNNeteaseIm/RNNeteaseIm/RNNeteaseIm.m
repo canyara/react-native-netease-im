@@ -103,7 +103,7 @@ RCT_EXPORT_METHOD(login:(nonnull NSString *)account token:(nonnull NSString *)to
             resolve(account);
         }else{
             NSString *strEorr = @"登录失败";
-            reject(@"-1",strEorr, nil);
+            reject(@"-1",[error localizedDescription], nil);
             NSLog(@"%@:%@",strEorr,error);
         }
     }];
