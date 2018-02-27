@@ -791,6 +791,11 @@ RCT_EXPORT_METHOD(cleanCache){
             case 17:
                 //视频会议相关通知
                 [_bridge.eventDispatcher sendDeviceEventWithName:@"observeAVChatStatus" body:param];
+                break;
+            case 18:
+                //视频会出错误
+                [_bridge.eventDispatcher sendDeviceEventWithName:@"observeAVChatError" body:param];
+                break;
             default:
                 break;
         }

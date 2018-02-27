@@ -85,6 +85,13 @@ class Utils {
         RNNeteaseIm.setupWebViewUserAgent();
     }
 
+    joinMeeting(name){
+      return RNNeteaseIm.joinMeeting(name);
+    }
+
+    leaveMeeting(){
+      RNNeteaseIm.leaveMeeting();
+    }
 }
 
 export default new Utils();

@@ -158,4 +158,11 @@
         self.myBlock(17, status);
     }
 }
+
+- (void)setAvchatError:(NSString *)status{
+    if(self.myBlock){
+        self.myBlock(18, status);
+    }
+}
+
 @end

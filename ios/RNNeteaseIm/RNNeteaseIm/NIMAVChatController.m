@@ -29,9 +29,9 @@
     return self;
 }
 -(void)addDelegate{
-    [[NIMAVChatSDK sharedSDK].netCallManager removeDelegate:self];
-    
+    [[NIMAVChatSDK sharedSDK].netCallManager addDelegate:self];
 }
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
@@ -109,27 +109,7 @@
 
 - (void)onBypassStreamingStatus:(NIMBypassStreamingStatus)code
 {
-    NSString *strStatus = @"0";
-    
-    switch (code) {
-        case NIMBypassStreamingStatusInitial:
-            NSLog(@"开始连接");
-            strStatus = @"开始连接";
-            break;
-            
-        case NIMBypassStreamingStatusConnecting:
-            NSLog(@"连接中");
-            strStatus = @"连接中";
-            break;
-            
-        case NIMBypassStreamingStatusConnectFailed:
-            NSLog(@"连接失败");
-            strStatus = @"连接失败";
-            break;
-            
-        default:
-            break;
-    }
+    NSString *strStatus = [NSString stringWithFormat:@"%d",(int)code];
     
     [NIMModel initShareMD].avchatStatus = strStatus;
 }
@@ -138,7 +118,7 @@
 - (void)onMeetingError:(NSError *)error meeting:(NIMNetCallMeeting *)meeting
 {
     //互动直播发生错误 刷新UI
-    [NIMModel initShareMD].avchatStatus = error.localizedDescription;
+    [NIMModel initShareMD].avchatError = error.localizedDescription;
 }
 
 @end
