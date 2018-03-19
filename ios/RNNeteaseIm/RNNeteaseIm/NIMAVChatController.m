@@ -52,6 +52,11 @@
     meeting.type = NIMNetCallMediaTypeVideo;
     meeting.actor = NO;
     
+    //初始化option参数
+    NIMNetCallOption *option = [[NIMNetCallOption alloc]init];
+    option.autoRotateRemoteVideo = NO;
+    meeting.option = option;
+    
     //加入会议
     [[NIMAVChatSDK sharedSDK].netCallManager joinMeeting:meeting completion:^(NIMNetCallMeeting * _Nonnull meeting, NSError * _Nonnull error) {
         //加入会议失败

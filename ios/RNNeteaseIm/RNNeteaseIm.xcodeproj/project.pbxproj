@@ -589,11 +589,9 @@
 			buildSettings = {
 				GCC_PREFIX_HEADER = RNNeteaseIm/PrefixHeader.pch;
 				HEADER_SEARCH_PATHS = (
+					"$(inherited)/**",
 					"$(SRCROOT)/../../../react-native/React/**",
 					"$(SRCROOT)/../../../../ios/Pods/Headers/Public/**",
-					"$(SRCROOT)",
-					"~/workPath/coin-pusher/ios/Pods/Headers/Public/**",
-					"~/workPath/coin-pusher/node_modules/react-native/React/**",
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -607,11 +605,9 @@
 			buildSettings = {
 				GCC_PREFIX_HEADER = RNNeteaseIm/PrefixHeader.pch;
 				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
 					"$(SRCROOT)/../../../react-native/React/**",
 					"$(SRCROOT)/../../../../ios/Pods/Headers/Public/**",
-					"$(SRCROOT)",
-					"$(PROJECT_DIR)/Pods/Headers/Public/**",
-					"$(PROJECT_DIR)/../node_modules/react-native/React/**",
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
