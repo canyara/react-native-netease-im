@@ -55,6 +55,7 @@
     //初始化option参数
     NIMNetCallOption *option = [[NIMNetCallOption alloc]init];
     option.autoRotateRemoteVideo = NO;
+    option.pureVideo = YES;
     meeting.option = option;
     
     //加入会议
